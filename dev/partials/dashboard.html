@@ -1,0 +1,44 @@
+<section class="container wrapper">
+	<div class="row">
+		<section class="chars col-lg-4">
+			<h2>Characters</h2>
+			<hr>
+			<div class="" ng-repeat="char in Characters">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-lg-3">
+								<a href="modules/displaychar/#/!/?Name={{char.Name}}"><h2>{{char.Name}}</h2></a>
+							</div>
+							<div class="col-lg-offset-4 col-lg-3">
+								<h4>{{char.Race}}</h4>
+								<h4>{{char.Class}}</h4>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body">
+						{{char.Description}}
+						<br>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="games col-lg-3">
+			<h2>Games</h2>
+			<hr>
+			<h5>You Have no Games at this time</h5> 
+		</section>
+		<section class="modules col-lg-offset-2 col-lg-2">
+			<h2>Modules</h2>
+			<hr>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h6><a href="../app/modules/createchar/">Create Character</a></h6>
+				</div>
+				<div class="panel-body">
+					<p>Create a Character and Register to use in a Gamer Tool's Game</p>
+				</div>
+			</div>
+		</section>
